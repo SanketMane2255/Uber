@@ -24,12 +24,12 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        select: false,
+        select: false,// used to hide the password when we fetch the user data
     },
     socketId: {
         type: String,
     }
-    // We are socketId to share the live location
+    // We are using socketId to share the live location
 })
 
 

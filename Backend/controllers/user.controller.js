@@ -6,7 +6,7 @@ const {validationResult} = require('express-validator');
 
 module.exports.registerUser = async (req , res , next) => {
 
-     console.log("Registering user", req.body);
+     console.log("Registering user 1 :", req.body);
 
     const errors = validationResult(req);
     if(!errors.isEmpty()) {
